@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sök Blanketter & E-tjänster</title>
+    <meta name="description" content="Hitta blanketter och e-tjänster för nyanlända i Sverige">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header>
+            <h1>🔍 Hitta Blanketter & E-tjänster</h1>
+            <p class="subtitle">För dig som är nyanländ i Sverige</p>
+        </header>
+
+        <!-- Search Section -->
+        <div class="search-section">
+            <div class="search-box">
+                <input 
+                    type="text" 
+                    id="searchInput" 
+                    placeholder="Sök efter blankett eller tjänst, t.ex. bostadsbidrag, etableringstillägg..."
+                    autocomplete="off"
+                >
+                <button id="searchBtn">
+                    <span class="search-icon">🔍</span>
+                    Sök
+                </button>
+            </div>
+            <div id="suggestions" class="suggestions"></div>
+        </div>
+
+        <!-- Organization Filter -->
+        <div class="filter-section">
+            <h3>Filtrera efter myndighet:</h3>
+            <div class="organization-filter">
+                <button class="org-btn active" data-org="all">Alla myndigheter</button>
+                <button class="org-btn" data-org="Försäkringskassan">Försäkringskassan (FK)</button>
+                <button class="org-btn" data-org="Skatteverket">Skatteverket</button>
+                <button class="org-btn" data-org="Migrationsverket">Migrationsverket</button>
+                <button class="org-btn" data-org="Arbetsförmedlingen">Arbetsförmedlingen</button>
+                <button class="org-btn" data-org="Pensionsmyndigheten">Pensionsmyndigheten</button>
+                <button class="org-btn" data-org="Lerums kommun">Lerums kommun</button>
+                <button class="org-btn" data-org="CSN">CSN</button>
+            </div>
+        </div>
+
+        <!-- Results Counter -->
+        <div id="resultsCount" class="results-count"></div>
+
+        <!-- Results Section -->
+        <div id="results" class="results">
+            <!-- Results will be displayed here -->
+        </div>
+
+        <!-- No Results Message -->
+        <div id="noResults" class="no-results" style="display: none;">
+            <div class="no-results-icon">😕</div>
+            <p>Inga resultat hittades</p>
+            <p class="small">Försök med andra sökord eller välj en annan myndighet</p>
+        </div>
+
+        <!-- Popular Services -->
+        <div class="popular-section">
+            <h2>📌 Vanliga tjänster för nyanlända</h2>
+            <div id="popularServices" class="popular-grid"></div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>Samling av länkar till blanketter och e-tjänster för nyanlända i Sverige</p>
+        <p class="small">Uppdaterad: Januari 2026</p>
+        <p class="add-info">💡 <strong>Tips:</strong> Du kan enkelt lägga till fler länkar själv - se README-filen</p>
+    </footer>
+
+    <script src="data.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>

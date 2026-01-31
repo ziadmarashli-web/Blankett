@@ -28,7 +28,7 @@ const tjänsterDatabase = [
         namn: "Bostadsbidrag",
         nyckelord: "bostadsbidrag boende bidrag stöd hyra ekonomiskt",
         organisation: "Försäkringskassan",
-        länk: "https://www.forsakringskassan.se/privatperson/bostadsbidrag",
+        länk: "https://www.forsakringskassan.se/download/18.1a01ba2a17c1f02608a29b/1767336765584/5096-ansok-om-bostadsbidrag.pdf",
         populär: true
     },
     {
